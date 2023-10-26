@@ -1,0 +1,341 @@
+Revision: a3036e2129d73a6b2242248cc114e7a4eca7dace
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 09.10.2022 13:59:34
+Message:
+Vector V1.2
+
+Переработан shrink_to_fit под реалии нового аллокатора
+----
+Added: .vs/Самописный Vector 2021/FileContentIndex/4a57cd59-52f3-4f03-80c2-7315479da728.vsidx
+Rename: .vs/Самописный Vector 2021/FileContentIndex/read.lock (from Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/unsuccessfulbuild)
+Added: .vs/Самописный Vector 2021/v17/.suo
+Added: .vs/Самописный Vector 2021/v17/Browse.VC.db
+Added: .vs/Самописный Vector 2021/v17/ipch/AutoPCH/994dca4dc8164b16/SOURCE.ipch
+Modified: x64/Debug/Самописный Vector 2021.exe
+Modified: x64/Debug/Самописный Vector 2021.pdb
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+Modified: Самописный Vector 2021/x64/Debug/Source.obj
+Added: Самописный Vector 2021/x64/Debug/vc143.idb
+Added: Самописный Vector 2021/x64/Debug/vc143.pdb
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.command.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.write.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.command.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.write.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/Самописный Vector 2021.lastbuildstate
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.exe.recipe
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+Modified: Самописный Vector 2021/Самописный Vector 2021.vcxproj
+
+Revision: e55c1e27b9bdb6ae2a79adc8b0f019b2dcbb719d
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 06.10.2022 20:13:05
+Message:
+Vector V1.1
+
+-Добавлены некоторые комментарии
+- удалены ненужные переменные
+----
+Modified: Самописный Vector 2021/my_vector.h
+
+Revision: 8006c8a7861e3de2491f1b4280f03f8133a9b3dc
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 06.10.2022 17:55:42
+Message:
+Vector V1.0
+
+- Полность переработана система  аллокации памяти под placement new
+для оптимизации.
+-Затронуты прочие методы под новую аллокацию памяти
+- добавлен && корректный push_back
+- добавлен небольшой тест производительности в source
+----
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+
+Revision: 4342aa11f279d874744c27588cee8fb7116a301d
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 23.02.2022 19:03:40
+Message:
+ Vector V0.9.6
+
+Исправлено:
+
+- Неоптимизированный конструктор принимающий размер в size_t теперь выдает все в соответствии с std::vector
+
+-Возможно операторы сравнения переусложнены в плане метопрограммирования, но логику решено оставить.
+----
+Modified: .vs/Самописный Vector 2021/v16/.suo
+Modified: .vs/Самописный Vector 2021/v16/Browse.VC.db
+Added: .vs/Самописный Vector 2021/v16/Browse.VC.db-shm
+Added: .vs/Самописный Vector 2021/v16/Browse.VC.db-wal
+Added: .vs/Самописный Vector 2021/v16/Browse.VC.opendb
+Modified: .vs/Самописный Vector 2021/v16/ipch/AutoPCH/3504e5a93ca2e352/SOURCE.ipch
+Modified: x64/Debug/Самописный Vector 2021.exe
+Modified: x64/Debug/Самописный Vector 2021.pdb
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+Modified: Самописный Vector 2021/x64/Debug/Source.obj
+Modified: Самописный Vector 2021/x64/Debug/vc142.idb
+Modified: Самописный Vector 2021/x64/Debug/vc142.pdb
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+
+Revision: b18bc166e5dedd15cc3b4c0c32309cb4abdb597e
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 13.01.2022 13:31:32
+Message:
+Vector V0.9.5
+
+Добавлено:
+
+Операторы сравнения для контейнера
+
+Убран using namespace my
+
+Затычка для IntelliSense  прописанна теперь через delete
+
+Незначительные изменения кода
+----
+Modified: x64/Debug/Самописный Vector 2021.exe
+Modified: x64/Debug/Самописный Vector 2021.pdb
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+Modified: Самописный Vector 2021/x64/Debug/Source.obj
+Modified: Самописный Vector 2021/x64/Debug/vc142.idb
+Modified: Самописный Vector 2021/x64/Debug/vc142.pdb
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.Build.CppClean.log
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+
+Revision: 96f003a3bf686b621e31cae0154d930dc054e586
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 01.01.2022 15:15:41
+Message:
+Vector V0.9.4
+
+Добавлено:
+
+Проставлены константы.
+
+Вернул инициализацию членов класса из за многочисленных проверок на nullptr.
+
+Добавлены комментарии к методам и членам классов.
+
+Мелкие исправления кода.
+----
+Modified: x64/Debug/Самописный Vector 2021.exe
+Modified: x64/Debug/Самописный Vector 2021.pdb
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+Modified: Самописный Vector 2021/x64/Debug/Source.obj
+Modified: Самописный Vector 2021/x64/Debug/source.obj.enc
+Modified: Самописный Vector 2021/x64/Debug/vc142.idb
+Modified: Самописный Vector 2021/x64/Debug/vc142.pdb
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.command.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/Самописный Vector 2021.lastbuildstate
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+
+Revision: efaf42c0c622f5e74fa9ead6cbd9a67b8eefe2fa
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 31.12.2021 11:36:48
+Message:
+Vector V0.9.3
+
+Добавлено:
+
+Метод swap().
+Убрана инициализация членов класса.
+Метод reserve().
+----
+Modified: x64/Debug/Самописный Vector 2021.exe
+Modified: x64/Debug/Самописный Vector 2021.pdb
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+Modified: Самописный Vector 2021/x64/Debug/vc142.idb
+Modified: Самописный Vector 2021/x64/Debug/vc142.pdb
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.command.1.tlog
+Added: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/unsuccessfulbuild
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.Build.CppClean.log
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+Added: Самописный Vector 2021/x64/Release/Самописный Vector 2021.log
+
+Revision: d803032f765b088c36b6659d45d271c91b6c6e90
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 30.12.2021 14:47:52
+Message:
+Merge branch 'main' of https://github.com/RockHero666/Vector-
+
+----
+Deleted: Самописный Vector 2021/my_vector.cpp
+Deleted: Самописный Vector 2021/x64/Release/Самописный Vector 2021.log
+Modified: x64/Debug/Самописный Vector 2021.exe
+Modified: x64/Debug/Самописный Vector 2021.pdb
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+Modified: Самописный Vector 2021/x64/Debug/Source.obj
+Modified: Самописный Vector 2021/x64/Debug/vc142.idb
+Modified: Самописный Vector 2021/x64/Debug/vc142.pdb
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+
+Revision: d87c37b6434a520a9120c94094ec93e2b872182b
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 30.12.2021 11:38:57
+Message:
+Delete my_vector.cpp
+
+----
+Deleted: Самописный Vector 2021/my_vector.cpp
+
+Revision: 5dce0a5642b215b84ab077a2adf8320bc4610d89
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 30.12.2021 11:36:44
+Message:
+Delete Самописный Vector 2021.log
+
+----
+Deleted: Самописный Vector 2021/x64/Release/Самописный Vector 2021.log
+
+Revision: 2ef7a211fecad08488c5c059b1b443aed3eef6cc
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 30.12.2021 14:47:40
+Message:
+Vector V0.9.2
+
+Добавлены:
+
+Метод shrink_to_fit() для оптимизации памяти.
+Конструктор класса принимающий список инициализации.
+Оператор присваивания принимающий список инициализации.
+Исправлен одни из конструкторов класса принимающий размер через аргументы.
+----
+Modified: x64/Debug/Самописный Vector 2021.exe
+Modified: x64/Debug/Самописный Vector 2021.pdb
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+Modified: Самописный Vector 2021/x64/Debug/Source.obj
+Modified: Самописный Vector 2021/x64/Debug/vc142.idb
+Modified: Самописный Vector 2021/x64/Debug/vc142.pdb
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+
+Revision: c47590a82c82d062769b2f5d8133e30ada75ddc3
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 30.12.2021 11:33:10
+Message:
+v0.9.1
+
+Исправлено:
+Устаревшее наследование от std::iterator.
+Баг с end() методом класса, теперь он запоминает позицию.
+Добавлена функция заглушка для IntelliSense.
+----
+Modified: x64/Debug/Самописный Vector 2021.exe
+Modified: x64/Debug/Самописный Vector 2021.pdb
+Modified: Самописный Vector 2021/Source.cpp
+Modified: Самописный Vector 2021/my_vector.h
+Modified: Самописный Vector 2021/x64/Debug/Source.obj
+Modified: Самописный Vector 2021/x64/Debug/vc142.idb
+Modified: Самописный Vector 2021/x64/Debug/vc142.pdb
+Modified: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.read.1.tlog
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Modified: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+
+Revision: e9c64fea3d223218e2a447e69889757be1b94d98
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 28.12.2021 16:50:35
+Message:
+Vector 0.9
+
+123
+----
+Added: .vs/Самописный Vector 2021/v16/.suo
+Added: .vs/Самописный Vector 2021/v16/Browse.VC.db
+Added: .vs/Самописный Vector 2021/v16/ipch/AutoPCH/3504e5a93ca2e352/SOURCE.ipch
+Added: .vs/Самописный Vector 2021/v16/ipch/AutoPCH/5cbf767a0776aeb7/MY_VECTOR.ipch
+Added: .vs/Самописный Vector 2021/v16/ipch/AutoPCH/a5bbba16a91cfb42/MY_VECTOR.ipch
+Added: .vs/Самописный Vector 2021/v16/ipch/AutoPCH/d1132e288fbea5d8/SOURCE.ipch
+Added: .vs/Самописный Vector 2021/v16/ipch/AutoPCH/d45325cc4234ea79/SOURCE.ipch
+Added: Debug/Самописный Vector 2021.exe
+Added: Debug/Самописный Vector 2021.pdb
+Added: x64/Debug/Самописный Vector 2021.exe
+Added: x64/Debug/Самописный Vector 2021.pdb
+Added: x64/Release/Самописный Vector 2021.exe
+Added: x64/Release/Самописный Vector 2021.pdb
+Added: Самописный Vector 2021.sln
+Added: Самописный Vector 2021/Debug/Source.obj
+Added: Самописный Vector 2021/Debug/vc142.idb
+Added: Самописный Vector 2021/Debug/vc142.pdb
+Added: Самописный Vector 2021/Debug/Самописн.77990cfd.tlog/CL.command.1.tlog
+Added: Самописный Vector 2021/Debug/Самописн.77990cfd.tlog/CL.read.1.tlog
+Added: Самописный Vector 2021/Debug/Самописн.77990cfd.tlog/CL.write.1.tlog
+Added: Самописный Vector 2021/Debug/Самописн.77990cfd.tlog/link.command.1.tlog
+Added: Самописный Vector 2021/Debug/Самописн.77990cfd.tlog/link.read.1.tlog
+Added: Самописный Vector 2021/Debug/Самописн.77990cfd.tlog/link.write.1.tlog
+Added: Самописный Vector 2021/Debug/Самописн.77990cfd.tlog/Самописный Vector 2021.lastbuildstate
+Added: Самописный Vector 2021/Debug/Самописный Vector 2021.Build.CppClean.log
+Added: Самописный Vector 2021/Debug/Самописный Vector 2021.exe.recipe
+Added: Самописный Vector 2021/Debug/Самописный Vector 2021.ilk
+Added: Самописный Vector 2021/Debug/Самописный Vector 2021.log
+Added: Самописный Vector 2021/Debug/Самописный Vector 2021.vcxproj.FileListAbsolute.txt
+Added: Самописный Vector 2021/Source.cpp
+Added: Самописный Vector 2021/my_vector.cpp
+Added: Самописный Vector 2021/my_vector.h
+Added: Самописный Vector 2021/x64/Debug/CodeAnalysisResultManifest.txt
+Added: Самописный Vector 2021/x64/Debug/Source.nativecodeanalysis.sarif
+Added: Самописный Vector 2021/x64/Debug/Source.nativecodeanalysis.xml
+Added: Самописный Vector 2021/x64/Debug/Source.obj
+Added: Самописный Vector 2021/x64/Debug/source.obj.enc
+Added: Самописный Vector 2021/x64/Debug/vc.nativecodeanalysis.all.xml
+Added: Самописный Vector 2021/x64/Debug/vc142.idb
+Added: Самописный Vector 2021/x64/Debug/vc142.pdb
+Added: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.command.1.tlog
+Added: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.read.1.tlog
+Added: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/CL.write.1.tlog
+Added: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.command.1.tlog
+Added: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.read.1.tlog
+Added: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/link.write.1.tlog
+Added: Самописный Vector 2021/x64/Debug/Самописн.77990cfd.tlog/Самописный Vector 2021.lastbuildstate
+Added: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.Build.CppClean.log
+Added: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.exe.recipe
+Added: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.ilk
+Added: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.log
+Added: Самописный Vector 2021/x64/Debug/Самописный Vector 2021.vcxproj.FileListAbsolute.txt
+Added: Самописный Vector 2021/x64/Release/Source.obj
+Added: Самописный Vector 2021/x64/Release/vc142.pdb
+Added: Самописный Vector 2021/x64/Release/Самописн.77990cfd.tlog/CL.command.1.tlog
+Added: Самописный Vector 2021/x64/Release/Самописн.77990cfd.tlog/CL.read.1.tlog
+Added: Самописный Vector 2021/x64/Release/Самописн.77990cfd.tlog/CL.write.1.tlog
+Added: Самописный Vector 2021/x64/Release/Самописн.77990cfd.tlog/link.command.1.tlog
+Added: Самописный Vector 2021/x64/Release/Самописн.77990cfd.tlog/link.read.1.tlog
+Added: Самописный Vector 2021/x64/Release/Самописн.77990cfd.tlog/link.write.1.tlog
+Added: Самописный Vector 2021/x64/Release/Самописн.77990cfd.tlog/Самописный Vector 2021.lastbuildstate
+Added: Самописный Vector 2021/x64/Release/Самописный Vector 2021.exe.recipe
+Added: Самописный Vector 2021/x64/Release/Самописный Vector 2021.iobj
+Added: Самописный Vector 2021/x64/Release/Самописный Vector 2021.ipdb
+Added: Самописный Vector 2021/x64/Release/Самописный Vector 2021.log
+Added: Самописный Vector 2021/Самописный Vector 2021.vcxproj
+Added: Самописный Vector 2021/Самописный Vector 2021.vcxproj.filters
+Added: Самописный Vector 2021/Самописный Vector 2021.vcxproj.user
+
+Revision: 06712354609eced4944d14621dd986a795e9a909
+Author: RockHero666 <77151446+RockHero666@users.noreply.github.com>
+Date: 28.12.2021 16:49:38
+Message:
+Initial commit
+
+----
+Added: .gitattributes
+
